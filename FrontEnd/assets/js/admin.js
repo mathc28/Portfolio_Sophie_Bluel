@@ -76,7 +76,7 @@ logoutBtn.addEventListener("click", function () {
 
 
 /**
- * on créer la 2ème modale, les catégories du formulaires, la prévisualisation de l'image, le fetch POST et un event listener pour envoyer le nouveau projet dans l'API
+ * on créer la 2ème modale, les catégories du formulaire, la prévisualisation de l'image, le fetch POST et un event listener pour envoyer le nouveau projet dans l'API
  */
 
 

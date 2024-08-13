@@ -92,7 +92,7 @@ function displayCategoryBtnAll() {
 }
 
 /**
- *
+ * Fonction init qui va lancer toutes les fonctiopns vu précédemment. 
  */
 async function init() {
   // Attends de recuperer les data de l'api
