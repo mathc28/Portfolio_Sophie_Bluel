@@ -6,6 +6,10 @@ const btnModifier = document.querySelector(".modification");
 const gallerie = document.querySelector(".gallery");
 
 /**
+ * on créer le mode Admin avec la bannière, le bouton modifier et logout
+ */
+
+/**
  * on créer la bannière
  */
 const createBanner = () => {
@@ -69,6 +73,12 @@ const btnEditor = document.querySelector(".modif");
 logoutBtn.addEventListener("click", function () {
   localStorage.removeItem("token");
 });
+
+
+/**
+ * on créer la 2ème modale, les catégories du formulaires, la prévisualisation de l'image, le fetch POST et un event listener pour envoyer le nouveau projet dans l'API
+ */
+
 
 /**
  * création de la deuxième modal pour l'ajout de projet
@@ -274,7 +284,7 @@ const createModalAjoutPhoto = () => {
 };
 
 /**
- * On créer une fonction de pour supprimer un projet de la première modale avec un fetch
+ * On créer une fonction de pour supprimer un projet de la première modale avec un fetch DELETE
  */
 async function deleteProject(work) {
   return await fetch(baseUrl + `/works/${work.id}`, {
@@ -311,7 +321,9 @@ async function deleteProject(work) {
         "Erreur serveur lors de la suppression du fichier";
     });
 }
-
+/**
+ * on créer la 1ème modale, ouverture/fermeture des 2 modales, ajout de la galerie avec ajout de la poubelle
+ */
 /**
  * création de la premiere modal avec la galerie de projets
  */
